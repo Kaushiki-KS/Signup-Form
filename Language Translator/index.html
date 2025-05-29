@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        nav{
+            background-color: #002764;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav>ul{
+            list-style-type: none;
+            display: flex;
+            overflow: hidden;
+        }
+        nav>ul>li>a{
+            color: #ffffff;
+            text-decoration: none;
+            padding: 20px 16px;
+        }
+
+
+        #google_element{
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Kaushiki</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div id="google_element"></div>
+    </nav>
+    
+    <h1>Hi, I am language translator</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam maiores nihil molestias tenetur ad odio eaque quis? Veritatis velit ipsam hic recusandae provident, minima ex numquam quod saepe aut.</p>
+    
+
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+
+    <script>
+        function loadGoogleTranslate(){
+            new google.translate.TranslateElement("google_element");
+        }
+    </script>
+</body>
+</html>
